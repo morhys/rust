@@ -993,7 +993,7 @@ impl CurrentDepGraph {
         // Pre-allocate the dep node structures. We over-allocate a little so
         // that we hopefully don't have to re-allocate during this compilation
         // session.
-        let new_node_count_estimate = (prev_graph_node_count * 115) / 100;
+        let new_node_count_estimate = (prev_graph_node_count * 102) / 100;
 
         CurrentDepGraph {
             data: IndexVec::with_capacity(new_node_count_estimate),
